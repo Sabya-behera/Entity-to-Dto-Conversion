@@ -26,8 +26,7 @@ public class UserController {
     @GetMapping("/getentity")
     public List<User> findsAll()
     {
-        List<User> findAll=userRepository.findAll();
-        return findsAll();
+        return userRepository.findAll();
     }
 
     @GetMapping("/get/{id}")
